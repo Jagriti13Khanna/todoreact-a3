@@ -19,7 +19,7 @@ This is a Todo list app in react where we have added the login authentication us
     NEXT_PUBLIC_FIREBASE_APP_ID=your-key-here
     NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your-key-here
 ``` 
-3. CONFIG FILE
+3. Add a config file in the firebase directory and paste this.
 ```javascript
    const firebaseCredentials = {
         apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -41,5 +41,7 @@ This is a Todo list app in react where we have added the login authentication us
     npm dev run
 ```
 
-## View live on Vercel - https://todoreact-a3-4c7x74p1l-jagriti13khanna.vercel.app/
+## View live on Vercel 
+    
+    https://todoreact-a3-4c7x74p1l-jagriti13khanna.vercel.app/
  

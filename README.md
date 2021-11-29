@@ -1,18 +1,14 @@
-# Logging Into Firebase
+## React Todo - User Authentication
 
-- Download the files from teams week-012 class-2
-- Download lab from assessments practical 3
+This is a Todo list app in react where we have added the login authentication using the email and password provider from the firebase SDK.
 
+## Setting up the project:
 
-
-
-
-
-In order to complete the task for the lab due Sunday. You will have to have firebase configured and working with next.js and vercel.
-
-If you do not have it configured please watch the video again. You need to create a file in the root of your project call
-```.env.local```. In this file you need to paste in  the keys from the firebase console for the app you setup in the firebase project.
-
+1.  Create a file in the root of your project call
+```
+    .env.local
+```
+2. In this file you need to paste in  the keys from the firebase console for the app you setup in the firebase project.
 ```json
     NEXT_PUBLIC_FIREBASE_API_KEY=your-key-here
     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-key-here
@@ -23,8 +19,7 @@ If you do not have it configured please watch the video again. You need to creat
     NEXT_PUBLIC_FIREBASE_APP_ID=your-key-here
     NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your-key-here
 ``` 
-## CONFIG FILE
-
+3. CONFIG FILE
 ```javascript
    const firebaseCredentials = {
         apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -35,8 +30,16 @@ If you do not have it configured please watch the video again. You need to creat
         messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
         appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
    }
-
    export firebaseCredentials
-}
 ```
+4. Please run the following to set up node modules.
+```
+    npm install
+```
+5. Run the build used.
+```
+    npm dev run
+```
+
+## View live on Vercel - https://todoreact-a3-4c7x74p1l-jagriti13khanna.vercel.app/
  

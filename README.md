@@ -41,8 +41,5 @@ This is a Todo list app in react where we have added the login authentication us
     npm run dev
 ```
 
-## View live on Vercel
+## [View live on Vercel](https://todoreact-a3-4c7x74p1l-jagriti13khanna.vercel.app/)
 
-```
-    [Todo React App](https://todoreact-a3-4c7x74p1l-jagriti13khanna.vercel.app/)
-```

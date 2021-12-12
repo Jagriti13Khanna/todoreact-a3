@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Brand} from 'components/brand'
 import { Button } from 'ui/buttons';
 const LinksContainer = styled.div`
- max-width: 320px;
+max-width: 320px;
 margin: 2rem auto;
 display:flex;
 flex-direction: column;
@@ -14,6 +14,7 @@ button{
   font-size:1.125rem;
 }
   
+
 `;
 
 const PageHeader = styled.header`
@@ -50,11 +51,11 @@ function index(props) {
 
          <p>Official task management tool for tools</p>
          <LinksContainer>
-         <Link   href="/signup">
-             <Button bgcolor="#0fa9ec" color="#ffffff">new user account setup</Button>
+         <Link   href="/login">
+             <Button bgcolor="#0fa9ec" color="#ffffff">New user account setup</Button>
         </Link>
          <Link href="/login">
-           <Button bgcolor="#0071e3" color="white">current user account login</Button>
+           <Button bgcolor="#0071e3" color="white">Current user account login</Button>
          </Link>
         </LinksContainer>
             <ul>              

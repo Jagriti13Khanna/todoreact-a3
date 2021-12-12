@@ -1,34 +1,70 @@
-import { AppBar } from "components/appbar"
-import { GitHubProvider, GoogleProvider } from "components/authentication/providers"
-import { Title } from "ui/title"
-import { Spacer } from "ui/spacers"
-import {UserLogin} from "components/authentication/user-login"
-import { Legal, HighLight } from "ui/legal"
-import {PageLayout, PageHeader, PageFooter, PageBody} from 'layouts/loginpage'
-function index (){
-    
-    return(
-        <>
-              <AppBar/>
-              <PageLayout>
-                    <PageHeader>
-                    <Title>Account Login</Title>
-                    </PageHeader>
-               <PageBody>
-                   <GoogleProvider style={{marginBottom:"1.5rem"}}>With Google</GoogleProvider>
-                   <GitHubProvider>With Github</GitHubProvider>
-                   <Spacer className="spacing" >OR</Spacer>
-                   <UserLogin/>
-                </PageBody>             
-                <PageFooter>
-                        <Legal>Legal Stuff  <HighLight>terms and conditions</HighLight></Legal>
-                </PageFooter>
-
-              </PageLayout>
-        </>
-    )
+import Image from 'next/image'
+import Link from 'next/link'
+import styled from 'styled-components';
+import {Brand} from 'components/brand'
+import { Button } from 'ui/buttons';
+const LinksContainer = styled.div`
+ max-width: 320px;
+margin: 2rem auto;
+display:flex;
+flex-direction: column;
+justify-content: center;
+button{
+  margin-bottom: 1rem;
+  font-size:1.125rem;
 }
+  
+`;
+
+const PageHeader = styled.header`
+  text-align: center;
+  color:#222b37;
+  p{
+    margin:0.5rem;
+
+  }
+  .brand{
+    margin-top:2rem;
+     h1{
+       margin-bottom: -2rem;
+     }
+  }
+  li{
+    color:#646f79;
+        font-weight: 200;
+        font-size: 1.5rem;
+      }
+
+`
 
  
 
-export default index
+ 
+function index(props) {
+ 
+  return (
+    <>
+  
+     <PageHeader>
+    <Brand className="brand" width="148" size="5rem"   display="column"  />      
+
+         <p>Official task management tool for tools</p>
+         <LinksContainer>
+         <Link   href="/signup">
+             <Button bgcolor="#0fa9ec" color="#ffffff">new user account setup</Button>
+        </Link>
+         <Link href="/login">
+           <Button bgcolor="#0071e3" color="white">current user account login</Button>
+         </Link>
+        </LinksContainer>
+            <ul>              
+              <li>No Credit Card Required</li>
+              <li>Upgrade your account at anytime</li>
+            </ul>
+     </PageHeader>
+     
+    </>
+  );
+}
+
+export default index;

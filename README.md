@@ -36,6 +36,10 @@ This is a Todo list app in react where we have added the login authentication us
 ```
     npm install
 ```
+5. Compile the build.
+```
+    npm run build
+```
 5. Run the build used.
 ```
     npm run dev

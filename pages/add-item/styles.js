@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const AddNewItem = styled.aside`
    max-width: 480px;
-   margin: 2rem auto;
+   margin: 2rem 1rem;
    padding:1rem;
    header{
        margin-bottom: 2rem;
@@ -30,24 +30,14 @@ const AddNewItem = styled.aside`
     margin:0;
     font-weight: bold;
 }
-`
-const ItemID = styled.div`
-
-  
 `;
 
-const AddItem = styled.form`
-  background-color: #fcfcfc;
-  box-shadow:0 0 2px 0px  #dddddd;
-  padding: 2rem 1rem;
-`;
 
-const ItemDescription = styled.div`
-  
-`;
 
-const ItemCategory = styled.div`
-`
+
+
+
+
  
 
-export {AddNewItem, ItemID, AddItem, ItemDescription}
+export default AddNewItem

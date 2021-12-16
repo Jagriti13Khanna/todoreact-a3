@@ -33,6 +33,7 @@ function GoogleProvider({ children,  ...props }) {
     <ProviderButton onClick={ handleClick } {...props} >
       <div>
         <Image
+          alt ="google" 
           src={google}
           layout="fixed"
           width={24}

@@ -5,7 +5,7 @@ import {BrandStyles} from "./styles"
 
 function Brand ({...props}){
   return(
-    <Link href="/">
+    <Link href="/" passHref>
     <BrandStyles {...props}>
       <Logo {...props}/>
       <figcaption><h2>2doolyst</h2></figcaption>

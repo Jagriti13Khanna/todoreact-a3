@@ -34,6 +34,7 @@ function GitHubProvider({ children, ...props }) {
     <ProviderButton {...props} onClick={ handleClick }>
       <div>
         <Image
+          alt ="github" 
           src={github}
           layout="fixed"
           width={24}

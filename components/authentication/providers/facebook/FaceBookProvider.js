@@ -9,6 +9,7 @@ function FaceBookProvider({ children, ...props }) {
     <ProviderButton>
       <div>
         <Image
+          alt ="facebook" 
           src={facebook}
           layout="fixed"
           width={24}

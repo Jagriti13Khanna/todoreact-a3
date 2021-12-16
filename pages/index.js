@@ -51,10 +51,10 @@ function index(props) {
 
          <p>Official task management tool for tools</p>
          <LinksContainer>
-         <Link   href="/login">
+         <Link href="/login" passHref>
              <Button bgcolor="#0fa9ec" color="#ffffff">New user account setup</Button>
         </Link>
-         <Link href="/login">
+         <Link href="/login" passHref>
            <Button bgcolor="#0071e3" color="white">Current user account login</Button>
          </Link>
         </LinksContainer>

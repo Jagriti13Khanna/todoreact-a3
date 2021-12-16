@@ -8,7 +8,13 @@ function TwitterProvider({ children, ...props }) {
   return (
     <ProviderButton>
       <div>
-        <Image src={twitter} layout="fixed" width={24} height={24} quality={30} />
+        <Image 
+        alt ="twitter"
+        src={twitter} 
+        layout="fixed" 
+        width={24} 
+        height={24} 
+        quality={30} />
         <span> {children}</span>
       </div>
     </ProviderButton>
